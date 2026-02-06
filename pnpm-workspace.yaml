@@ -1,0 +1,9 @@
+packages:
+  - playground
+
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
+  - unrs-resolver
+
+onlyBuiltDependencies:
+  - esbuild
