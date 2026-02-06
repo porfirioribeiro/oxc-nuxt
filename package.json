@@ -23,13 +23,14 @@
     }
   },
   "scripts": {
+    "postinstall": "nuxt prepare",
     "prepack": "nuxt-module-build build",
     "dev": "npm run dev:prepare && nuxt dev playground",
     "dev:build": "nuxt build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxt prepare playground",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
-    "lint": "oxlint --type-aware --type-check",
-    "lint:fix": "oxlint --type-aware --type-check --fix && oxfmt",
+    "lint": "oxlint --type-aware --type-check -c oxlint.config.ts",
+    "lint:fix": "oxlint --type-aware --type-check -c oxlint.config.ts --fix && oxfmt",
     "format": "oxfmt",
     "test": "vitest run",
     "test:watch": "vitest watch",
