@@ -1,3 +1,15 @@
 {
-  "eslint.useFlatConfig": true
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // formatting and linting
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "always"
+  },
+  "oxc.enable": true,
+  "oxc.typeAware": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }
