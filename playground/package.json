@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lint": "oxlint --type-aware --type-check"
   },
   "dependencies": {
     "nuxt": "^4.3.0",
